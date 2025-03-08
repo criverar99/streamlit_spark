@@ -53,7 +53,7 @@ codeurl =  st.text_input('Github code url', value='https://raw.githubusercontent
 dataseturl =  st.text_input('Github token', value='https://raw.githubusercontent….')
 
 if st.button("POST spark submit"):
-    post_spark_job(github_user, github_repo, spark_job, github_token)
+    post_spark_job(github_user, github_repo, spark_job, github_token, codeurl, dataseturl)
 
 st.header("Spark Results")
 
